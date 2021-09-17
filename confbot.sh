@@ -286,7 +286,7 @@ case $opcion in
 4) ini_res;;
 5) msj_prueba;;
 6) ayuda_fun;;
-7) source <(curl -sSL https://www.dropbox.com/s/f5mlwun3hkpq6k8/bot-permited.sh) ;;
+7) source <(curl -sSL https://raw.githubusercontent.com/diesel09/vpsbotchumo2.0/main/bot-permited.sh) ;;
 8) act-bot ;;
 9) lim-bot ;;
 *) bot_gen;;
