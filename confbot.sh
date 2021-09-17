@@ -1,5 +1,5 @@
 #!/bin/bash
-SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2RpZXNlbDA5L0JvdGdlbi9tYXN0ZXIvZ2VuZXJhZG9yZXMvcmVwb3M="
+SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2RpZXNlbDA5L3Zwc2JvdGNodW1vMi4wL21hc3Rlci9UZWxlQm90R2VuL3NvdXJjZXM="
 SUB_DOM='base64 -d'
 bar="\e[0;36m=====================================================\e[0m"
 #[[ -e /etc/ADM-db/idioma_menuinst ]] && tr=$(cat < /etc/ADM-db/idioma_menuinst)
