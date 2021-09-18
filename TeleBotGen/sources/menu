@@ -14,7 +14,7 @@ bot_retorno="======🚫 Suscripcion Expirada, Usuario: $message_from_first_name 
 			 bot_retorno+="$LINE\n"
 			 bot_retorno+="  ⚠️ TENDRAS ACCESO LIMITADO ⚠️ \n  🚫 Sin TU RESELLER EN LA KEY 🚫"
 			 bot_retorno+="$LINE\n"
-			 bot_retorno+="𝙃𝙤𝙡𝙖 【 @$message_from_username 】, $(source trans -b pt:${tr} "tu ID No Fue autorizado, Realiza una Donacion ") \n"
+			 bot_retorno+="Bienvenido 【 @$message_from_username 】, $(source trans -b pt:${tr} "tu ID No Fue autorizado, Realiza una Donacion ") \n"
 			 bot_retorno+="$LINE\n"
 			 bot_retorno+="/ID    | Muestra sus ID |\n"
 			 bot_retorno+="/menu  | $text1\n"
