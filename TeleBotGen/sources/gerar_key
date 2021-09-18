@@ -33,7 +33,7 @@ fun_list "$valuekey"
 keyfinal=$(ofus "$oUP:8888/$valuekey/$LIST")
 local bot_retorno="$LINE\n"
 echo $nomkey > ${SCPT_DIR}/menu_credito
-bot_retorno+=" ✅ Key Generada a @$message_from_username Exitosamente ✅\n ⚠️ Autodestruccion 6 horas ⚠️\n"
+bot_retorno+=" ✅ Key Generada a @$message_from_username ✅\n ⚠️ Autodestruccion 6 horas ⚠️\n"
 bot_retorno+="$LINE\n"
 bot_retorno+="  ⚠️ Script Admin Vps ⚠️ \n  🚫 Sin TU RESELLER EN LA KEY 🚫\n"
 #bot_retorno+=" 🛡️ Reseller actual 🛡️ : $(cat < ${CIDdir}/resell)\n"
@@ -46,9 +46,9 @@ bot_retorno+="$LINE\n"
 bot_retorno+="apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/diesel09/mxvps/master/vps-mx-free/instalscript.sh; chmod 777 instalscript.sh; ./instalscript.sh\n"
 bot_retorno+="$LINE\n"
 bot_retorno+="🧬 Soporte : Ubuntu 14.04 - 16.04 - 18.04 - 20.04\n     SO Recomendado: Ubuntu 18.04 \n  🛡️⚔️ Solicita Creditos de tu KEY 🛡️⚔️\n"
-bot_retorno+=" 🔐 『 $numkey_used 』keys Usadas 🔓,『 $numkey_gen 』keys Generadas 🗝️ \n"
+bot_retorno+=" 🔐 『 $numkey_used 』keys Usadas 🔓,『 $numkey_gen 』keys Generadas \n"
 bot_retorno+="  Limite Actual Permitido : $(cat < /etc/ADM-db/limit) \n"
-bot_retorno+=" ⌚⌚ Hora Actual del Bot : $(printf '%(%D-%H:%M:%S)T')⌚⌚\n"
+bot_retorno+=" ⌚ Hora del Bot : $(printf '%(%D-%H:%M:%S)T')⌚\n"
 bot_retorno+="$LINE\n"
 msj_fun
 echo -e $bot_retorno >> ${keytxt}/key_${chatuser}.txt
