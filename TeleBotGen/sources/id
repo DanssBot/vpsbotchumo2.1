@@ -9,7 +9,7 @@ bot_retorno="====================\n"
            bot_retorno+="=======================================\n"
           bot_retorno+="Su ID 【 ${chatuser} 】\n"
           bot_retorno+="=======================================\n"
-          bot_retorno+="Para estar Autorizado, Realiza una Donacion\n y envia tu Token de Donacion a $(cat < /etc/ADM-db/resell)\n"
+          bot_retorno+="Para estar Autorizado, Realiza su pago\n y adjunte su ID a https://www.paypal.com/paypalme/VPSPremium/20\n"
           bot_retorno+="=======================================\n"
 msj_fun
 } || {
