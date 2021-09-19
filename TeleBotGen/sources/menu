@@ -20,7 +20,8 @@ bot_retorno="======🚫 Suscripcion Expirada, Usuario: $message_from_first_name 
 			 bot_retorno+="/menu  | $text1\n"
 			 bot_retorno+="/ayuda | $text2\n"
 			 bot_retorno+="$LINE\n"
-			 bot_retorno+="Si tienes inconvenientes con el BotGEN \n Contactame : $(cat < /etc/ADM-db/resell)\n"
+			 #bot_retorno+="Si tienes inconvenientes con el BotGEN \n Contactame : $(cat < /etc/ADM-db/resell)\n"
+			 bot_retorno+="Si tienes inconvenientes con el BotGEN \n Contactame : @FelipeCouoh\n"
 			 bot_retorno+="$LINE\n"
 			 msj_fun
 		 else
