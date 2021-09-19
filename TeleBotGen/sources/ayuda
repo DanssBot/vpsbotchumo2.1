@@ -4,7 +4,7 @@ ayuda_src () {
 bot_retorno="  🎊 Bienvenido  $message_from_first_name $message_from_last_name  al Botgen Admin VPS  🎊\n"
 	 if [[ $(echo $permited|grep "${chatuser}") = "" ]]; then
 		 if [[ $(cat ${CID}|grep "${chatuser}") = "" ]]; then
-			 bot_retorno+="/ID\n Muestra su ID \n Para tener acceso /𝚔𝚎𝚢𝚐𝚎𝚗\n Realize su pago $(cat < /etc/ADM-db/resell)\n"
+			 bot_retorno+="/ID\n Muestra su ID \n Para tener acceso al /Keygen\n Realize su pago $(cat < /etc/ADM-db/resell)\n"
 			 bot_retorno+="$LINE\n"
 			 bot_retorno+="(Boton) Keygen\n genera una key para\n el instalador del script\n para tener acceso\n deve enviar su ID al admin $(cat < /etc/ADM-db/resell)\n"
 			 bot_retorno+="$LINE\n"
