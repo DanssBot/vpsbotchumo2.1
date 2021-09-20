@@ -47,9 +47,9 @@ addID_reply () {
           bot_retorno+="New ID: ${message_text[$id]}\n"
           bot_retorno+="$LINE"
 
-          bot_retor="  🎊 Bienvenido Nuevamente al Bot Admin VPS  🎊\n"
+          bot_retor="  🎊Bienvenido Nuevamente al Bot Admin VPS🎊\n"
           bot_retor+="Hola 『 $message_from_first_name $message_from_last_name 』\n"
-          bot_retor+="El Administrador $(cat < /etc/ADM-db/resell) te autorizo Acceso por 30 dias\n"
+          bot_retor+="✅ El Administrador $(cat < /etc/ADM-db/resell) te autorizo Acceso por 30 dias ✅\n"
           bot_retor+="Para GENERAR Key's usar el comando /Keygen\n"
           bot_retor+="$LINE\n"
           bot_retor+="Recuerda adquirir creditos, o Realizar una Colaboracion\n Paypal : https://www.paypal.com/paypalme/VPSPremium/20\n"
