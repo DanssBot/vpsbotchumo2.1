@@ -58,7 +58,7 @@ bot_retorno="======🚫 Suscripcion Expirada, Usuario: $message_from_first_name 
 		 bot_retorno+="Gen $PID_GEN | Keys Used [$k_used]\n"
 
 		 bot_retorno+="$LINE\n"
-		 bot_retorno+="/infosys ❈ 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾𝙽 𝙳𝙴 𝚂𝙴𝚁𝚅𝙸𝙳𝙾𝚁 |\n"
+		 bot_retorno+="/infosys ❈ INFORMACION DEL SERVIDOR |\n"
 		 bot_retorno+="/list ❈ MUESTRA LISTA DE ID PERMITIDOS\n"
 		 bot_retorno+="/instal ❈ INSTALADOR OFICIAL |\n"
 		 bot_retorno+="/menu ❈ MENU DE ACCIONES |\n"
