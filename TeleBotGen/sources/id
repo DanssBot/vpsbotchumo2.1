@@ -39,7 +39,7 @@ addID_reply () {
         #echo "/${message_text[$id]} | $(date '+%d-%m-%Y' -d " +$dias days")" >> $idirect/idtegm
         #cat $idirect/idtegm | awk '{print $1}' >> ${CID}
         echo "/${message_text[$id]}" >> ${CID}
-          bot_retorno="  🎊 𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘  $message_from_first_name  𝚊𝚕  𝙱𝚘𝚝 Admin VPS  🎊\n"
+          bot_retorno="  🎊 Bienvenido  $message_from_first_name  al Bot Admin VPS  🎊\n"
           bot_retorno+="✅ *ID agregado * ✅\n"
           bot_retorno+="$LINE\n"
           bot_retorno+="$(< ${CID})\n"
