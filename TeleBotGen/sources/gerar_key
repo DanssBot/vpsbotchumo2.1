@@ -13,7 +13,7 @@ INSTA_ARQUIVOS="ADMVPS.zip"
 DIR="/etc/http-shell"
 LIST="spVnimdA"
 #LIST="lista-arq"
-unset usadas
+
 		 usadas="$(cat /etc/http-instas)"
 		 [[ ! $usadas ]] && k_used="0" || k_used="$usadas"
 		 Keys Used [$k_used]\n"
