@@ -8,6 +8,7 @@
 BASICINST="ADMbot.sh C-SSR.sh Crear-Demo.sh optimizar.sh PDirect.py PGet.py POpen.py PPriv.py PPub.py Shadowsocks-R.sh Shadowsocks-libev.sh Unlock-Pass-VULTR.sh apacheon.sh blockBT.sh budp.sh dns-netflix.sh dropbear.sh fai2ban.sh gestor.sh menu message.txt openvpn.sh paysnd.sh ports.sh shadowsocks.sh sockspy.sh speed.sh speedtest.py squid.sh squidpass.sh ssl.sh tcp.sh ultrahost usercodes utils.sh v2ray.sh v2ui.sh trojanserver.sh panelweb.sh vnc payssl.sh"
 SCPT_DIR="/etc/SCRIPT"
 IVAR="/etc/http-instas"
+usadas="/etc/http-instas"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
 INSTA_ARQUIVOS="ADMVPS.zip"
 DIR="/etc/http-shell"
@@ -35,7 +36,8 @@ bot_retorno+="$LINE\n"
 bot_retorno+="apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/diesel09/mxvps/master/vps-mx-free/instalscript.sh; chmod 777 instalscript.sh; ./instalscript.sh\n"
 bot_retorno+="$LINE\n"
 bot_retorno+="🧬 Soporte : Ubuntu 14.04 - 16.04 - 18.04 - 20.04\n     SO Recomendado: Ubuntu 18.04 \n  🛡️⚔️ Solicita Creditos de tu KEY 🛡️⚔️\n"
-bot_retorno+=" 🔐 『 $numkey_used 』keys Usadas 🔓『 $numkey_gen 』keys Generadas \n"
+#bot_retorno+=" 🔐 『 $numkey_used 』keys Usadas 🔓『 $numkey_gen 』keys Generadas \n"
+bot_retorno+=" 🔐 『 $usadas 』keys Usadas 🔓『 $numkey_gen 』keys Generadas \n"
 bot_retorno+="$LINE\n"
 msj_fun
 echo -e $bot_retorno >> ${keytxt}/key_${chatuser}.txt
@@ -62,9 +64,10 @@ done
 #CRIA KEY
 [[ ! -e ${DIR}/${KEY} ]] && mkdir ${DIR}/${KEY}
 #PASSA ARQS
+[[ ! $usadas ]] && k_used="0" 
 nombrevalue="${chatuser}"
 echo "$nombrevalue" >> /etc/ADM-db/num-key.cont
-numkey_used=$(grep -o -i $nombrevalue /etc/gerar-sh-log | wc -l)
+#numkey_used=$(grep -o -i $nombrevalue /etc/gerar-sh-log | wc -l)
 numkey_gen=$(grep -o -i $nombrevalue /etc/ADM-db/num-key.cont | wc -l)
 #ADM BASIC
 arqslist="$BASICINST"
