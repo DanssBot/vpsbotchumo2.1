@@ -12,7 +12,7 @@ MIP2=$(wget -qO- ipv4.icanhazip.com)
 echo "$IP" > /usr/bin/vendor_code
 }
 function_verify () {
- permited=$(curl -sSL "https://raw.githubusercontent.com/diesel09/vpsbotchumo2.0/main/TeleBotGen/Control/Control-Bot")
+ permited=$(curl -sSL "https://raw.githubusercontent.com/DanssBot/vpsbotchumo2.1/main/TeleBotGen/Control/Control-Bot")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n\n\e[31m====================================================="
