@@ -16,7 +16,7 @@ function_verify () {
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n\n\e[31m====================================================="
-  echo -e "\e[31m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADA!\n     SI DESEAS USAR EL BOTGEN CONTACTE A @FelipeCouoh"
+  echo -e "\e[31m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADA!\n     SI DESEAS USAR EL BOTGEN CONTACTE A @Darinel"
   echo -e "\e[31m=====================================================\n\n\n\e[0m"
   [[ -d /etc/ADM-db ]] && rm -rf /etc/ADM-db
 [[ ! -e "/bin/ShellBot.sh" ]] && rm /bin/ShellBot.sh
@@ -25,7 +25,7 @@ function_verify () {
  ### INTALAR VERCION DE SCRIPT
   clear
   echo -e "\n\n\n\e[32m====================================================="
-  echo -e "\e[32m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!\n       SI DESEAS USAR EL BOTGEN CONTACTE A @FelipeCouoh"
+  echo -e "\e[32m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!\n       SI DESEAS USAR EL BOTGEN CONTACTE A @Darinel"
   echo -e "\e[32m=====================================================\n\n\n\e[0m"
   CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
   v1=$(curl -sSL "https://raw.githubusercontent.com/diesel09/genmx8.3/master/GENERADOR-VPS-MX/Install/Vercion")
