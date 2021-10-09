@@ -125,8 +125,8 @@ invalido_fun () {
 	[[ ! -z ${callback_query_message_chat_id[$id]} ]] && var=${callback_query_message_chat_id[$id]} || var=${message_chat_id[$id]}
 local bot_retorno="  🎊 Bienvenido al bot Admin VPS  🎊\n"
 	 bot_retorno+="$LINE\n"
-         bot_retorno+="Comando Invalido!! Teclea /ayuda para conocer los pasos! \n O Contacta al administrador @FelipeCouoh \n"
-	 bot_retorno+="⚠️ Adquiera una suscripcion Mensual! ⚠️ \n Realize su pago a https://www.paypal.com/paypalme/VPSPremium/20 \n y adjunte Su ID \n"
+         bot_retorno+="Comando Invalido!! Teclea /ayuda para conocer los pasos! \n O Contacta al administrador @Darinel \n"
+	 bot_retorno+="⚠️ Adquiera una suscripcion Mensual! ⚠️ \n Realize su pago a https://www.paypal.com/paypalme/VPSPre/20 \n y adjunte Su ID \n"
          bot_retorno+="$LINE\n"
 	     ShellBot.sendMessage --chat_id $var \
 							--text "<i>$(echo -e $bot_retorno)</i>" \
@@ -167,11 +167,11 @@ ShellBot.InlineKeyboardButton --button 'botao_conf' --line 2 --text 'MENU' --cal
 ShellBot.InlineKeyboardButton --button 'botao_conf' --line 3 --text 'GENERAR KEY' --callback_data '/keygen'
 ShellBot.InlineKeyboardButton --button 'botao_user' --line 1 --text 'GENERAR KEY' --callback_data '/keygen'
 ShellBot.InlineKeyboardButton --button 'botao_user' --line 2 --text '💰 DONAR 💰' --callback_data  '1' --url '#'
-ShellBot.InlineKeyboardButton --button 'botao_user' --line 2 --text ' Contacto 📲' --callback_data  '1' --url 'https://wa.me/+529842147259'
+ShellBot.InlineKeyboardButton --button 'botao_user' --line 2 --text ' Contacto 📲' --callback_data  '1' --url 'https://wa.me/+525620117143'
 
-#ShellBot.InlineKeyboardButton --button 'botao_user' --line 2 --text ' Contacto 📲' --callback_data  '1' --url 'https://wa.me/+529842147259?text=Hola!,%20%20Me%20interesa%20Conocer%20más%20sobre%20el%20ADM.'
+#ShellBot.InlineKeyboardButton --button 'botao_user' --line 2 --text ' Contacto 📲' --callback_data  '1' --url 'https://wa.me/+525620117143?text=Hola!,%20%20Me%20interesa%20Conocer%20más%20sobre%20el%20ADM.'
 ShellBot.InlineKeyboardButton --button 'botao_donar' --line 2 --text 'Donar Paypal' --callback_data '1' --url '#'
-ShellBot.InlineKeyboardButton --button 'botao_donar' --line 2 --text 'ACCEDER WHATSAPP' --callback_data '1' --url 'https://wa.me/+529842147259'
+ShellBot.InlineKeyboardButton --button 'botao_donar' --line 2 --text 'ACCEDER WHATSAPP' --callback_data '1' --url 'https://wa.me/+525620117143'
 
 # Ejecutando escucha del bot
 while true; do
