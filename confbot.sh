@@ -28,7 +28,7 @@ function_verify () {
   echo -e "\e[32m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!\n       SI DESEAS USAR EL BOTGEN CONTACTE A @Darinel"
   echo -e "\e[32m=====================================================\n\n\n\e[0m"
   CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
-  v1=$(curl -sSL "https://raw.githubusercontent.com/DanssBot/genadminvps/master/GENERADOR-VPS-MX/Install/Vercio")
+  v1=$(curl -sSL "https://raw.githubusercontent.com/DanssBot/genadminvps/master/GENERADOR-VPS-MX/Install/Vercion")
   echo "$v1" > /etc/ADM-db/vercion
   echo "@KeyVpspremium_bot" > ${CIDdir}/resell
   
